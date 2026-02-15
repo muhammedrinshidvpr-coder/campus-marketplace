@@ -19,7 +19,7 @@ export default function MarketplaceFeed() {
     useEffect(() => {
         const fetchItems = async () => {
             try {
-                const res = await fetch("http://127.0.0.1:8000/api/items");
+                const res = await fetch("https://campus-trade-backend-mase.onrender.com/api/items");
                 if (!res.ok) throw new Error("Failed to load items");
 
                 const data = await res.json();

@@ -29,7 +29,7 @@ app = FastAPI(lifespan=lifespan)
 # --- CORS SHIELD ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3005", "http://127.0.0.1:3005"],
+   allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

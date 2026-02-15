@@ -19,9 +19,10 @@ export default function Home() {
     setLoading(true);
 
     try {
-      console.log("Attempting to connect to backend at http://127.0.0.1:8000...");
+      console.log("Attempting to connect to live backend at https://campus-trade-backend-mase.onrender.com...");
 
-      const res = await fetch("http://127.0.0.1:8000/api/register", {
+      // <--- LIVE RENDER URL INJECTED HERE --->
+      const res = await fetch("https://campus-trade-backend-mase.onrender.com/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

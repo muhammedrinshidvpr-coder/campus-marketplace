@@ -25,7 +25,7 @@ export default function SellItem() {
 
         try {
             console.log("Asking AI for a description...");
-            const res = await fetch("http://127.0.0.1:8000/api/generate-description", {
+            const res = await fetch("https://campus-trade-backend-mase.onrender.com/api/generate-description", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ title: title }),
